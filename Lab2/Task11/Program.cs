@@ -12,10 +12,15 @@ namespace Task11
         {
             String t;
             t = Console.ReadLine();
-            double a;
-            a = double.Parse(t);
+            double x;
+            x = double.Parse(t);
             double b;
-            b = Math.Sqrt(a);
+            if (x < 0)
+            {
+                Console.WriteLine("Значение x должно быть неотрицательным");
+                return;
+            }
+            b = Math.Sqrt(x);
             Console.WriteLine("{0:F4}", b);
         }
     }

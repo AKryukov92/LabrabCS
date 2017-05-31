@@ -15,6 +15,11 @@ namespace Task3
             double a;
             a = double.Parse(t);
             double c;
+            if (a <= 0)
+            {
+                Console.WriteLine("Значение A должно быть положительным");
+                return;
+            }
             c = a * a * a;
             Console.WriteLine(c);
         }

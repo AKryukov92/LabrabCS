@@ -18,6 +18,11 @@ namespace Task14
             double b;
             b = double.Parse(t2);
             double c;
+            if (b > 0)
+            {
+                Console.WriteLine("Значение b должно быть неположительным");
+                return;
+            }
             c=a* Math.Sqrt(-7*b);
             Console.WriteLine("{0:F4}", c);
         }

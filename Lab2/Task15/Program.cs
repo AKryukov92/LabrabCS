@@ -15,6 +15,11 @@ namespace Task15
             double a;
             a = double.Parse(t);
             double b;
+            if (a < -273.15)
+            {
+                Console.WriteLine("Значение T должно быть выше абсолютного нуля");
+                return;
+            }
             b = 1.8*a+32;
             Console.WriteLine("{0:F4}", b);
         }

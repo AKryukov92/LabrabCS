@@ -19,6 +19,16 @@ namespace Task6
             double h;
             h = double.Parse(t2);
             double s;
+            if (a <= 0)
+            {
+                Console.WriteLine("Значение а должно быть положительным");
+                return;
+            }
+            if (h <= 0)
+            {
+                Console.WriteLine("Значение h должно быть положительным");
+                return;
+            }
             s = a*h/2;
             Console.WriteLine("{0:F4}", s);
         }

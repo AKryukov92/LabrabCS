@@ -22,6 +22,22 @@ namespace Task20
             h = double.Parse(t3);
             double T, W;
             double g=9.8067;
+            if (m <= 0)
+            {
+                Console.WriteLine("Значениe M должно быть положительным");
+                return;
+            }
+            if ( v <= 0)
+            {
+                Console.WriteLine("Значениe V должно быть положительным");
+                return;
+            }
+            if (h < 0)
+            {
+                Console.WriteLine("Значениe H должно быть неотрицательным");
+                return;
+            }
+
             T=m*v*v/2;
             W = m * g * h;
             Console.WriteLine("{0:F4}", T);

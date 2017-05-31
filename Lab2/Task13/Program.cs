@@ -15,6 +15,11 @@ namespace Task13
             double a;
             a = double.Parse(t);
             double b;
+            if (61-a < 0)
+            {
+                Console.WriteLine("Подкоренное выражение должно быть неотрицательным");
+                return;
+            }
             b = 3*Math.Sqrt(61-a);
             Console.WriteLine("{0:F4}", b);
         }

@@ -20,6 +20,16 @@ namespace Task28
             b = double.Parse(t2);
             c = double.Parse(t3);
             x = double.Parse(t4);
+            if (a * x * x + b * x + c < 0)
+            {
+                Console.WriteLine("Подкоренное выражение должно быть неотрицательным");
+                return;
+            }
+            if (Math.Sqrt(a * x * x + b * x + c) == 0)
+            {
+                Console.WriteLine("Знаменатель не может быть равен нулю");
+                return;
+            }
             R = 1/Math.Sqrt(a*x*x+b*x+c);
             Console.WriteLine("{0:F4}", R);
         }

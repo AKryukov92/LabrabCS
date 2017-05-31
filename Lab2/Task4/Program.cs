@@ -15,6 +15,11 @@ namespace Task4
             double r;
             r = double.Parse(t);
             double c;
+            if ( r<= 0)
+            {
+                Console.WriteLine("Значение r должно быть положительным");
+                return;
+            }
             c = 2 * Math.PI * r;
             Console.WriteLine("{0:F4}", c);
         }

@@ -20,6 +20,16 @@ namespace Task26
             b = double.Parse(t2);
             c = double.Parse(t3);
             d = double.Parse(t4);
+            if (a == 0)
+            {
+                Console.WriteLine("Значение a должно быть не равно нулю");
+                return;
+            }
+            if (d == 0)
+            {
+                Console.WriteLine("Значение d должно быть не равно нулю");
+                return;
+            }
             R=(a*d+b*c)/(a*d);
             Console.WriteLine("{0:F4}", R);
         }

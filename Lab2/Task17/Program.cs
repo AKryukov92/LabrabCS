@@ -21,6 +21,16 @@ namespace Task17
             double S;
             S = double.Parse(t3);
             double T;
+            if (V1 <= 0)
+            {
+                Console.WriteLine("Значение V1 должно быть неотрицательным");
+                return;
+            }
+            if (V2 <= 0)
+            {
+                Console.WriteLine("Значение V2 должно быть неотрицательным");
+                return;
+            }
             T = S / (V1 + V2);
             Console.WriteLine("{0:F4}", T);
         }

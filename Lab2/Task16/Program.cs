@@ -12,13 +12,23 @@ namespace Task16
         {
             String t1, t2;
             t1 = Console.ReadLine();
-            double a;
-            a = double.Parse(t1);
+            double x;
+            x = double.Parse(t1);
             t2 = Console.ReadLine();
-            double b;
-            b = double.Parse(t2);
+            double y;
+            y = double.Parse(t2);
             double c;
-            c = -5* Math.Sqrt(a+Math.Sqrt(b));
+            if (y < 0)
+            {
+                Console.WriteLine("Значение y должно быть неотрицательным");
+                return;
+            }
+            if (x + Math.Sqrt(y) < 0)
+            {
+                Console.WriteLine("Подкоренное выражение должно быть неотрицательным");
+                return;
+            }
+            c = -5* Math.Sqrt(x+Math.Sqrt(y));
             Console.WriteLine("{0:F4}", c);
         }
     }

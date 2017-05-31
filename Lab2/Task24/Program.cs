@@ -20,6 +20,11 @@ namespace Task24
             m1 = double.Parse(t2);
             m2 = double.Parse(t3);
             r = double.Parse(t4);
+            if (r == 0)
+            {
+                Console.WriteLine("Значение r должно быть не равно нулю");
+                return;
+            }
             C = y * m1 * m2 / (r * r);
             Console.WriteLine("{0:F4}", C);
         }

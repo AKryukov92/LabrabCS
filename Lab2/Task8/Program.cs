@@ -16,9 +16,19 @@ namespace Task8
             t2 = Console.ReadLine();
             int a;
             a = int.Parse(t1);
-           int b;
+            int b;
             b = int.Parse(t2);
             int q, p;
+            if (a <= 0)
+            {
+                Console.WriteLine("Значение T должно быть положительным");
+                return;
+            }
+            if (b <= 0)
+            {
+                Console.WriteLine("Значение L должно быть положительным");
+                return;
+            }
             q = (a * 100) / b;
             p = a * 100 % b;//Остаток от деления
             Console.WriteLine("{0} шт. и {1} см", q, p);

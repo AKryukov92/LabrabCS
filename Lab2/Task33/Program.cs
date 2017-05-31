@@ -15,6 +15,11 @@ namespace Task33
             double h, S;
             h = double.Parse(t1);
             double r=6350;
+            if (h < 0)
+            {
+                Console.WriteLine("Высота над уровнем Земли должна быть неотрицательна");
+                return;
+            }
             S = Math.Sqrt((r+h)*(r+h)-r*r);
             Console.WriteLine("{0:F4}", S);
         }

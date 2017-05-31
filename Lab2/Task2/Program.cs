@@ -15,8 +15,13 @@ namespace Task2
             double a;
             a = double.Parse(t);
             double c;
+            if (a <= 0)//если а имеет некорректное значение
+            {
+                Console.WriteLine("Значение A должно быть положительным");//Выводим ошибку
+                return;//Завершаем работу программы
+            }
             c = 6 * a * a;
-            Console.WriteLine(c);
+            Console.WriteLine("{0:F4}", c);
         }
     }
 }
