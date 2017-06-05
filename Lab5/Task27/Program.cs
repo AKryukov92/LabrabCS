@@ -19,7 +19,12 @@ namespace Task27
                 Console.WriteLine("Значение A должно быть в интервале [-10, 100]");
                 return;
             }
-            if (b==1 || b==4 || b==5 || b == 9 || b==10 || b==0)
+            if (a == 40)
+            {
+                Console.WriteLine("{0}'ой", a);
+                return;
+            } 
+            if (b==1 || b==4 || b==5 || b == 9 || b==0)
             {
                 Console.WriteLine("{0}'ый", a);
                 return;
