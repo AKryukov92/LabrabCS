@@ -44,12 +44,11 @@ namespace Task29
                 Console.WriteLine("Ширина должна быть положительна");
                 return;
             }
-            if (Xt <= Xn + W && Yt <= Yn + H)
-            {
-                Console.WriteLine("Точка внутри");
+            if (Xt > Xn && Xt < Xn + W && Yt > Yn && Yt < Yn + H)
+            { 
+                Console.WriteLine("Точка внутри"); 
             }
-            else
-            {
+            else {
                 Console.WriteLine("Точка не внутри");
             }
         }
