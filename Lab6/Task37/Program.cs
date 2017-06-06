@@ -14,8 +14,6 @@ namespace Task37
             int H = int.Parse(Console.ReadLine());
             int i = 0;
             int j = 0;
-            int k = 0;
-            int V = W;
             if (W < 0)
             {
                 Console.WriteLine("Значение W должно быть неотрицательно");
@@ -28,18 +26,17 @@ namespace Task37
             }
             while (j < H)
             {
-                while (i < W)
+                i = 0;
+                while (i < W - j)
                 {
                     Console.Write("+");
                     i++;
                 }
                 i = 0;
-                W = W - 1;
-                k = W;
-                while (k < V - 1)
+                while (i < j)
                 {
                     Console.Write("#");
-                    k++;
+                    i++;
                 }
                 j++;
                 Console.WriteLine();
