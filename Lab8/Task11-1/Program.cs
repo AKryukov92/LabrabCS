@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task9
+namespace Task11_1
 {
     class Program
     {
@@ -13,16 +13,16 @@ namespace Task9
             string t = Console.ReadLine();
             string[] arr = t.Split(' ');
             int l = arr.Length;
-            int i=l-1;
+            int i = 0;
             int j = 0;
             string A;
-            A = arr[i];
-            while (i>0)
+            while (i < l / 2)
             {
-                arr[i] = arr[i - 1];
-                i--;
+                A = arr[i];
+                arr[i] = arr[l - i - 1];
+                arr[l - i - 1] = A;
+                i++;
             }
-            arr[0] = A;
             while (j < l)
             {
                 Console.Write(arr[j] + " ");
