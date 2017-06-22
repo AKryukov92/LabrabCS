@@ -10,13 +10,13 @@ namespace Task23
     {
         static void Main(string[] args)
         {
-            string K = Console.ReadLine();
-            string T = Console.ReadLine();
+            string K = Console.ReadLine();//вводим число
+            string T = Console.ReadLine();//вводим массив
             string[] sarr = T.Split();
             int L = sarr.Length;
             int i = 0;
             int count = 0;
-            while (i < L)
+            while (i < L)//сколько раз число встречается в массиве
             {
                 if (sarr[i] == K)
                 {
