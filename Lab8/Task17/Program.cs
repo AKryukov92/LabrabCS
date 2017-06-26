@@ -18,19 +18,15 @@ namespace Task17
             int count = 0;
             while (i < l)
             {
+                j = 0;
                 while (j < l)
                 {
                     if (arr[i] == arr[j] && i != j)
                     {
                         count = count + 1;
                     }
-                    else 
-                    {
-                        count = count + 0; ;
-                    }
                     j++;
                 }
-                j = 0;
                 i++;
             }
             if (count > 0)

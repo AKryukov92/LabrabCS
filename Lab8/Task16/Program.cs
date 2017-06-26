@@ -31,6 +31,7 @@ namespace Task16
             }
             while (i < l1)
             {
+                j = 0;
                 while (j < l2)
                 {
                     if (top[i]==left[j])
@@ -39,7 +40,6 @@ namespace Task16
                     }
                     j++;
                 }
-                j = 0;
                 i++;
             }
             Console.WriteLine("Повторений: {0}", count);
