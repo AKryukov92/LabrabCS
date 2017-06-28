@@ -13,11 +13,17 @@ namespace Task20
             int P = int.Parse(Console.ReadLine());
             int Q = int.Parse(Console.ReadLine());
             string t = Console.ReadLine();
-            string t1 = t.Substring(P*2, Q*2-P*2+1);
-            string[] arr = t1.Split(' ');
-            string M = arr.Min();
-            int N = int.Parse(M);
-            Console.WriteLine(N);
+            string[] sarr = t.Split(' ');
+            int L = sarr.Length;
+            string M = "";
+            string[] arr = new string[L];
+            while (P <= Q)
+            {
+                arr[P] = sarr[P];
+                M = arr.Min();
+                P++;
+            }
+            Console.WriteLine(M);
         }
     }
 }
