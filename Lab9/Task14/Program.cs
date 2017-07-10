@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task9
+namespace Task14
 {
     class Program
     {
@@ -25,22 +25,35 @@ namespace Task9
                 Console.WriteLine("Файл пуст");
                 return;
             }
-            int index;
-            string name;
+            Console.WriteLine("Введите букву: ");
+            string A = Console.ReadLine();
+            int L = 0;
+            int i;
+            int j = 0;
+            int v = 0;
+            string fragment;
+            string t="";
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
-                index = line.IndexOf("@");
-                if (!line.Contains("@") || !line.Contains(".") || line.IndexOf("@")!=line.LastIndexOf("@") || 
-                    line.Substring(0,1)=="@")
+
+                L = line.Length;
+                i = 0;
+                while (i < L)
                 {
-                    Console.WriteLine("Некорректный почтовый адрес");
+                    t = line.Substring(i, 1);
+                    if (t.Contains(A))
+                    {
+                        v = v + 1;
+                    }
+                    if (t.Contains("\""))
+                    {
+                        v = 0;
+                    }
+                    i++;
                 }
-                else
-                {
-                    name = line.Substring(0, index);
-                    Console.WriteLine(name);
-                }
+                Console.Write(v + " ");
+                j++;
             }
             reader.Close();
         }
