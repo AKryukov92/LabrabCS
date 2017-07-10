@@ -17,6 +17,16 @@ namespace Task20
             int L = sarr.Length;
             string M = "";
             string[] arr = new string[L];
+            if (P < 0 || Q<0)
+            {
+                Console.WriteLine("Ошибка");
+                return;
+            }
+            if (P>=L || Q>=L)
+            {
+                Console.WriteLine("Ошибка");
+                return;
+            }
             while (P <= Q)
             {
                 arr[P] = sarr[P];
