@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Methods;
+
 
 namespace tfa
 {
@@ -72,6 +74,7 @@ namespace tfa
 
         static void Step5()
         {
+            Console.WriteLine();
             StringBuilder sb3550 = Lab06.task3550(
                 new StringBuilder()
                 .Append("@"))
@@ -81,6 +84,7 @@ namespace tfa
 
         static void Step6()
         {
+            Console.WriteLine();
             StringBuilder sb6572 = new StringBuilder();
             Lab06.task6572(sb6572, 8, 13);
             Lab06.task6572(sb6572, 691, 703);
@@ -143,6 +147,7 @@ namespace tfa
 
         static void Step10()
         {
+            Console.WriteLine();
             int[] in8770 = { 30, 37, 40, 8, 100 };
             String[] out8770 = {
                 "30+\n31-\n32-\n33-\n34-\n35-\n36-\n37-\n38-\n39-\n40-\n",
@@ -167,6 +172,7 @@ namespace tfa
 
         static void Step11()
         {
+            Console.WriteLine();
             String[] in5694 = { "a", "d", "h", "i", "z" };
             String[] out5694 = {
                 "a+\nb\nc\nd\ne\nf\ng\nh\n",
@@ -191,6 +197,7 @@ namespace tfa
 
         static void Step12()
         {
+            Console.WriteLine();
             int[] in6806 = { 10, 15, 20, 9, 23 };
             String[] out6806 = {
                 "11\n13\n17\n19\n10+\n12\n14\n15\n16\n18\n20\n",

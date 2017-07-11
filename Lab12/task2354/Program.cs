@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Methods;
 
 namespace tfa
 {
@@ -29,13 +30,15 @@ namespace tfa
 
         static void Step1()
         {
-            Console.WriteLine(Lab02.task4411(11.13) - 18.3);
+            double r = Lab02.task4411(11.13);
+            Console.WriteLine("{0:F15}", r - 18.13);
             Console.WriteLine(Lab02.task4411(-7919) - -7912);
             Console.WriteLine(Lab02.task4411(0) - 7);
         }
 
         static void Step2()
         {
+            Console.WriteLine();
             Console.WriteLine("{0:F6}", Lab02.task8428(45) - 0.7854);
             Console.WriteLine("{0:F6}", Lab02.task8428(1125) - 19.6350);
             Console.WriteLine("{0:F6}", Lab02.task8428(0));
@@ -46,6 +49,7 @@ namespace tfa
 
         static void Step3()
         {
+            Console.WriteLine();
             Console.WriteLine("{0:F6}", Lab02.task1262(7583) - 4.6025);
             Console.WriteLine("{0:F6}", Lab02.task1262(200) - -4.6985);
             Console.WriteLine("{0:F6}", Lab02.task1262(360) - 5);
@@ -54,6 +58,7 @@ namespace tfa
 
         static void Step4()
         {
+            Console.WriteLine();
             Console.WriteLine("{0:F6}", Lab02.task2790(6997) - 0.9205);
             Console.WriteLine("{0:F6}", Lab02.task2790(31) - 0.8572);
             Console.WriteLine("{0:F6}", Lab02.task2790(0) - 1.0000);
@@ -61,6 +66,7 @@ namespace tfa
 
         static void Step5()
         {
+            Console.WriteLine();
             Console.WriteLine("{0:F6}", Lab02.task9164(90, 90) - 0.0);
             Console.WriteLine("{0:F6}", Lab02.task9164(90, 0) - 1.0);
             Console.WriteLine("{0:F6}", Lab02.task9164(7559, 7549) - -0.2079);
@@ -68,6 +74,7 @@ namespace tfa
 
         static void Step6()
         {
+            Console.WriteLine();
             Console.WriteLine("{0:F6}", Lab02.task5789(1, 1, 3, 4) - 3.6055);
             Console.WriteLine("{0:F6}", Lab02.task5789(-2, 4, 8, -10) - 17.2046);
             Console.WriteLine("{0:F6}", Lab02.task5789(0, 0, -5, -7) - 8.6023);
@@ -77,6 +84,7 @@ namespace tfa
 
         static void Step7()
         {
+            Console.WriteLine();
             Console.WriteLine(Lab05.task5662(1, 2, 3));
             Console.WriteLine(Lab05.task5662(3, 17, 5));
             Console.WriteLine(Lab05.task5662(3, 6, 3));
@@ -85,6 +93,7 @@ namespace tfa
 
         static void Step8()
         {
+            Console.WriteLine();
             Console.WriteLine(Lab05.task3770(1, 2, 3) - 3);
             Console.WriteLine(Lab05.task3770(7, 4, -2) - 7);
             Console.WriteLine(Lab05.task3770(0, 5, -7) - 5);
@@ -92,6 +101,7 @@ namespace tfa
 
         static void Step9()
         {
+            Console.WriteLine();
             Console.WriteLine(Lab05.task3669(8, 13) - 1235520);
             Console.WriteLine(Lab05.task3669(159, 161) - 4095840);
             Console.WriteLine(Lab05.task3669(648, 648) - 648);
@@ -101,6 +111,7 @@ namespace tfa
 
         static void Step10()
         {
+            Console.WriteLine();
             Console.WriteLine(Lab06.task5969(8, 13));
             Console.WriteLine(Lab06.task5969(25, 44) - 105);
             Console.WriteLine(Lab06.task5969(80, 100) - 273);
@@ -109,6 +120,7 @@ namespace tfa
 
         static void Step11()
         {
+            Console.WriteLine();
             Console.WriteLine(Lab07.task4265("sABCD"));
             Console.WriteLine(Lab07.task4265("Uxyz"));
             Console.WriteLine(Lab07.task4265("s"));
@@ -118,6 +130,7 @@ namespace tfa
 
         static void Step12()
         {
+            Console.WriteLine();
             String[] in3946 = {
                 "1 2 3 4 1",
                 "1 2 3 4 1 3 4 4 4 4",
@@ -132,6 +145,7 @@ namespace tfa
 
         static void Step13()
         {
+            Console.WriteLine();
             String[] in7035 = {
                 "1 2 3 4 5 6",
                 "3 4 1 2 3 4 1 2 3 1 2",
@@ -149,6 +163,7 @@ namespace tfa
 
         static void Step14()
         {
+            Console.WriteLine();
             int[] in4283k = { 3, 5, 2, 1 };
             String[] in4283s = {
                 "1 2 3 4 1 2",
@@ -165,6 +180,7 @@ namespace tfa
 
         static void Step15()
         {
+            Console.WriteLine();
             String[] in9182 = {
                 "1 2 3 4 5 6",
                 "1 2 3 1 2 6",

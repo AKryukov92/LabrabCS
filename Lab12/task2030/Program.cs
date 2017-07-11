@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Methods;
 
 namespace tfa
 {
@@ -40,6 +41,7 @@ namespace tfa
 
         static void Step2()
         {
+            Console.WriteLine();
             double[] in4042x = { 2, 1, 0, -1, -2 };
             double[] in4042y = { 2, 1.5, 0, -2, -3 };
             for (int i = 0; i < in4042x.Length; i++)
@@ -58,6 +60,7 @@ namespace tfa
 
         static void Step3()
         {
+            Console.WriteLine();
             double[] in6351x = { 0, 1, 1.5, 2, 3, 0, 1, 1.5, 2, 3, 0, 1, 1.5, 2, 3 };
             double[] in6351y = { 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2 };
             for (int i = 0; i < in6351x.Length; i++)
@@ -76,6 +79,7 @@ namespace tfa
 
         static void Step4()
         {
+            Console.WriteLine();
             double[] in5382x = { 5, 1, 0, 5, 1, 0, 5, 1, 0, 5, 1, 0, 5, 1, 0 };
             double[] in5382y = { 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 1, 1, 1 };
             for (int i = 0; i < in5382x.Length; i++)
@@ -94,6 +98,7 @@ namespace tfa
 
         static void Step5()
         {
+            Console.WriteLine();
             double[] in7250x = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3 };
             double[] in7250y = { 2, 2, 2, 1, 1, 1, 0, 0, 0, -1.5, -1.5, -1.5, -2, -2, -2 };
             for (int i = 0; i < in7250x.Length; i++)
@@ -112,6 +117,7 @@ namespace tfa
 
         static void Step6()
         {
+            Console.WriteLine();
             double[] in9038x = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3 };
             double[] in9038y = { 2, 2, 2, 1.5, 1.5, 1.5, 1, 1, 1, 0.5, 0.5, 0.5, 0, 0, 0 };
             for (int i = 0; i < in9038x.Length; i++)
@@ -130,6 +136,7 @@ namespace tfa
 
         static void Step7()
         {
+            Console.WriteLine();
             String[] in7491 = { "bx", "fw", "123" };
             for (int i = 0; i < in7491.Length; i++)
             {
@@ -146,6 +153,7 @@ namespace tfa
 
         static void Step8()
         {
+            Console.WriteLine();
             String[] in4515 = {
                 "9 8 7 6 5",
                 "4 3 2 1 5 6 7 8 9 0",
