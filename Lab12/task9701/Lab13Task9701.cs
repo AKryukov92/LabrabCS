@@ -44,6 +44,8 @@ namespace task9701
             Step4845();
             Step7222();
             Step2166();
+            Step9180();
+            Step1544();
             Step5894();
             Step4425();
 
@@ -549,9 +551,10 @@ namespace task9701
                 "{{{}{}}}{{}{}}{{}}}"};
             for (int i = 0; i < in1618.Length; i++)
             {
+                Console.WriteLine(in1618[i]);
                 try
                 {
-                    Lab07.task1618(in1618[i]);
+                    Console.WriteLine(Lab07.task1618(in1618[i]));
                 }
                 catch (Exception e)
                 {
@@ -738,6 +741,10 @@ namespace task9701
                     String result = Lab08.task4425(in4425a[i], in4425data[i]);
                     Console.WriteLine("{0} ({1})", result, out4425[i]);
                 }
+                catch (IndexOutOfRangeException e)
+                {
+                    Console.WriteLine("Число A должно быть в интервале [0, длина массива)");
+                }
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
@@ -766,6 +773,10 @@ namespace task9701
                 {
                     int result = Lab08.task7290(in7290b[i], in7290data[i]);
                     Console.WriteLine("{0} ({1})", result, out7290[i]);
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    Console.WriteLine("Число B должно быть в интервале [0, размер массива)");
                 }
                 catch (Exception e)
                 {

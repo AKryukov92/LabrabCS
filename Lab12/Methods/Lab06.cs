@@ -320,5 +320,109 @@ namespace Methods
             }
             return sb8770;
         }
+        public static double task2802(int n)
+        {
+            //int i=1;
+            double j = n;
+            double sum=0;
+            if (n <=0) {
+                Exception error=new Exception("Значение N должно быть положительным");
+                throw error;
+            }
+            while(j>0) {
+                sum = sum + 1 / j;
+                j=j-1;
+            }
+            return sum;
+        }
+        public static int task9180(int in9180)
+        {
+            int sum = 0;
+            if (in9180 > 500 || in9180 < -100)
+            {
+                Exception error=new Exception("Значение А должно быть диапазоне от -100 до 500");
+                throw error;
+            }
+            while (in9180 <= 500)
+            {
+                sum = sum + in9180;
+                in9180++;
+            }
+            return sum;
+        }
+        public static int task1544(int in1544)
+        {
+            int sum = 0;
+            if (in1544 > 10000 || in1544 < -10)
+            {
+                Exception error = new Exception("Значение b должно быть в интервале [-10,10000]");
+                throw error;
+            }
+            while (in1544 >= -10)
+            {
+                sum = sum + in1544;
+                in1544--;
+            }
+            return sum;
+        }
+        public static bool task5170(int in5170)
+        {
+            int i = 2;
+            bool isPrime=false;//true или false
+            if (in5170 <= 0)
+            {
+                Exception error = new Exception("Значение Y должно быть положительным");
+                throw error;
+            }
+            while (i <= in5170 / 2)
+            {
+                if (in5170 % i == 0)
+                {
+                    isPrime=true;
+                }
+                i++;
+            }
+            if (isPrime)
+            {
+               return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static StringBuilder task5238(StringBuilder sb, int in5238w, int in5238h)
+        {
+            int i = 0;
+            int j = 0;
+            if (in5238w < 0)
+            {
+                Exception error = new Exception("Значение W должно быть неотрицательно");
+                throw error;
+            }
+            if (in5238h < 0)
+            {
+                Exception error = new Exception("Значение H должно быть неотрицательно");
+                throw error;
+            }
+            while (j < in5238h)
+            {
+                i = 0;
+                while (i < in5238w - j)
+                {
+                    sb.Append("+");
+                    i++;
+                }
+                i = 0;
+                while (i < j)
+                {
+                    sb.Append("#");
+                    i++;
+                }
+                j++;
+                sb.Append("\n");
+            }
+            return sb;
+        }
     }
 }
