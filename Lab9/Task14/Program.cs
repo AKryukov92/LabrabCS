@@ -27,35 +27,77 @@ namespace Task14
             }
             Console.WriteLine("Введите букву: ");
             string A = Console.ReadLine();
-            int L = 0;
             int i;
             int j = 0;
             int v = 0;
-            string fragment;
+            string fragment = "";
             string t="";
+            string t1 = "";
+            int index1=0;
+            int index2=0;
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();
-
-                L = line.Length;
-                i = 0;
-                while (i < L)
+                t = t + line;
+            }
+            index1 = t.IndexOf("\"");
+            index2 = t.IndexOf("\"", index1 + 1);
+            do
+            {
+                //if (t.Substring(index2 + 1, 1) != "," || t.Substring(index2 + 1, 1) != "")
+                //{
+                //    Console.WriteLine("Фрагменты должны разделяться запятыми");
+                //    return;
+                //}
+                if (index1 == t.LastIndexOf("\""))
                 {
-                    t = line.Substring(i, 1);
-                    if (t.Contains(A))
+                    Console.WriteLine("Фрагмент должен быть обрамлен кавычками");
+                    return;
+                }
+                fragment = t.Substring(index1+1, index2 - index1-1);
+                i = 0;
+                v = 0;
+                while (i < fragment.Length)
+                {
+                    t1 = fragment.Substring(i, 1);
+                    if (t1.Contains(A))
                     {
-                        v = v + 1;
-                    }
-                    if (t.Contains("\""))
-                    {
-                        v = 0;
+                        v++;
                     }
                     i++;
                 }
+                index1 = t.IndexOf("\"", index2 + 1);
+                index2 = t.IndexOf("\"", index1 + 1);
                 Console.Write(v + " ");
+                if (index1 < 0 || index2 < 0)
+                {
+                    return;
+                }
                 j++;
             }
+            while (j < t.Length);
             reader.Close();
+            //indexOf("\"", index2+1)
+            //string[] sarr = t.Split(',');
+            //i = 0;
+            //while (i < sarr.Length)
+            //{
+            //    v = 0;
+            //    j = 0;
+            //    fragment = sarr[i];
+            //    while (j < fragment.Length)
+            //    {
+            //        t1 = fragment.Substring(j, 1);
+            //        if (t1.Contains(A))
+            //        {
+            //            v++;
+            //        }
+            //        j++;
+            //    }
+            //    Console.Write(v + " ");
+            //    i++;
+            //}
+            //reader.Close();
         }
     }
 }

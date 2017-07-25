@@ -277,5 +277,22 @@ namespace Methods
             }
             return M;
         }
+        public static string task5683(string in5683)
+        {
+            string[] sarr;
+            StringBuilder sb=new StringBuilder();
+            sarr = in5683.Split(' ');
+            int i = 0;
+            if( in5683=="")
+            {
+                return "";
+            }
+            while (i < sarr.Length)
+            {
+                sb.Append(sarr[i] + "  " + i + "\n");
+                i++;
+            }
+            return sb.ToString();
+        }
     }
 }

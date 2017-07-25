@@ -9,24 +9,20 @@ namespace Methods
 {
     public class Lab13
     {
-        public static string checkup1(string filename)
+        public static string checkup(string input)
         {
-            int[] input = { 1, 2, 3, 4, 5, 6, 7, 8 };
-            for (int i = 0; i < input.Length; i++)
-            {
-                try
-                {
-                    string filename = "test" + input + ".csv";
-                    if (!File.Exists(filename))
-                        {
-                            Console.WriteLine ("Файл не существует");
-                        }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-            }
+             string filename = "test" + input + ".csv";
+             if (!File.Exists(filename))
+             {
+                 Exception error=new Exception("Файл не существует");
+                 throw error;
+             }
+             StreamReader reader = new StreamReader(filename);
+             if (reader.EndOfStream)
+             {
+                 return "Файл пуст";
+             }
+             return filename;
         }
     }
 }

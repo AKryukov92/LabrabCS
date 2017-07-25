@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Methods;
 
 namespace Task1212_1
 {
@@ -12,47 +13,44 @@ namespace Task1212_1
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
-            //string filename = "test" + input + ".csv";
-            //if (!File.Exists(filename))
-            //{
-            //    Console.WriteLine("Файл не существует");
-            //    return;
-            //}
-            StreamReader reader = new StreamReader(filename);
-            if (reader.EndOfStream)
-            {
-                Console.WriteLine("Файл пуст");
-                return;
-            }
-            int a, b, S;
-            int S0 = 0;
             try
             {
-                do
-                {
-                    string line = reader.ReadLine();
-                    string[] sarr = line.Split(';');
-                    if (sarr.Length != 4)
+                string filename = Lab13.checkup(input);
+                int a, b, S;
+                int S0 = 0;
+                StreamReader reader = new StreamReader(filename);
+                    try
                     {
-                        Console.WriteLine("Некорректный формат данных");
-                        return;
+                        do
+                        {
+                            string line = reader.ReadLine();
+                            string[] sarr = line.Split(';');
+                            if (sarr.Length != 4)
+                            {
+                                Console.WriteLine("Некорректный формат данных");
+                                return;
+                            }
+                            a = int.Parse(sarr[2]);
+                            b = int.Parse(sarr[3]);
+                            S = a * b;
+                            if (S > S0)
+                            {
+                                S0 = S;
+                            }
+                        }
+                        while (!reader.EndOfStream);
+                        Console.WriteLine(S0);
                     }
-                    a = int.Parse(sarr[2]);
-                    b = int.Parse(sarr[3]);
-                    S = a * b;
-                    if (S > S0)
+                    catch (FormatException e)
                     {
-                        S0 = S;
+                        Console.WriteLine("Не удается считать число");
                     }
+                    reader.Close();
                 }
-                while (!reader.EndOfStream);
-                Console.WriteLine(S0);
-            }
-            catch (FormatException e)
+            catch (Exception e)
             {
-                Console.WriteLine("Не удается считать число");
+                Console.WriteLine(e.Message);
             }
-            reader.Close();
         }
     }
 }
