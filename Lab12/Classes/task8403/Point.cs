@@ -13,7 +13,7 @@ namespace Classes.task8403
 
         public double DistanceTo(int px, int py)
         {
-            int dx = px - x;
+            int dx = px - this.x;
             int dy = py - y;
             return Math.Sqrt(dx * dx + dy * dy);
         }

@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caller1379.cs" />
+    <Compile Include="Caller1379.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Caller1953.cs" />
     <Compile Include="Caller2000.cs" />
     <Compile Include="Caller2401.cs" />
@@ -50,14 +52,24 @@
     <Compile Include="Caller2809.cs" />
     <Compile Include="Caller3956.cs" />
     <Compile Include="Caller4147.cs" />
-    <Compile Include="Caller5242.cs" />
-    <Compile Include="Caller5421.cs" />
+    <Compile Include="Caller5242.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Caller5421.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Caller5449.cs" />
     <Compile Include="Caller6011.cs" />
-    <Compile Include="Caller6037.cs" />
-    <Compile Include="Caller7297.cs" />
+    <Compile Include="Caller6037.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Caller7297.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Caller7301.cs" />
-    <Compile Include="Caller9914.cs" />
+    <Compile Include="Caller9914.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Caller3185.cs" />

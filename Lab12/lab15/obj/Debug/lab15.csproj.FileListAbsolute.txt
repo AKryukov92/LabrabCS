@@ -1,0 +1,7 @@
+F:\Репозиторий\LabrabCS\Lab12\lab15\obj\Debug\lab15.csprojResolveAssemblyReference.cache
+F:\Репозиторий\LabrabCS\Lab12\lab15\bin\Debug\lab15.exe
+F:\Репозиторий\LabrabCS\Lab12\lab15\bin\Debug\lab15.pdb
+F:\Репозиторий\LabrabCS\Lab12\lab15\bin\Debug\Classes.dll
+F:\Репозиторий\LabrabCS\Lab12\lab15\bin\Debug\Classes.pdb
+F:\Репозиторий\LabrabCS\Lab12\lab15\obj\Debug\lab15.exe
+F:\Репозиторий\LabrabCS\Lab12\lab15\obj\Debug\lab15.pdb

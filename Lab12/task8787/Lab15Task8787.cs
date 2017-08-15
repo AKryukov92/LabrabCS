@@ -14,6 +14,21 @@ namespace task8787
             Step2321();
             Step5053();
             Step8418();
+            Step9279();
+            //Step3657();
+            //Step6599();
+            Step1223();
+            Step3940();
+            Step8311();
+            Step3134();
+            Step9774();
+            Step9711();
+            Step3333();
+            Step9271();
+            Step4497();
+            Step8820();
+            Step3218();
+            Step7703();
         }
 
         private static void Step7991() {
@@ -36,7 +51,7 @@ namespace task8787
             Console.WriteLine(String.Join(" ", Lab06.task2321(8, 13)));
             Console.WriteLine(String.Join(" ", Lab06.task2321(691, 702)));
             Console.WriteLine(String.Join(" ", Lab06.task2321(23, 11)));
-}
+        }
 
         private static void Step5053()
         {
@@ -105,20 +120,20 @@ namespace task8787
                 Console.WriteLine(result);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("1223");
+            //Console.WriteLine();
+            //Console.WriteLine("1223");
 
-            String[] in1223t1 = { "1", "2", "3", "4", "1" };
-            Lab08.task1223(in1223t1);
-            Console.WriteLine(String.Join(" ", in1223t1));
+            //String[] in1223t1 = { "1", "2", "3", "4", "1" };
+            //Lab08.task1223(in1223t1);
+            //Console.WriteLine(String.Join(" ", in1223t1));
 
-            String[] in1223t2 = { "1", "2", "3", "4", "1", "2", "3", "4", "1", "2" };
-            Lab08.task1223(in1223t2);
-            Console.WriteLine(String.Join(" ", in1223t2));
+            //String[] in1223t2 = { "1", "2", "3", "4", "1", "2", "3", "4", "1", "2" };
+            //Lab08.task1223(in1223t2);
+            //Console.WriteLine(String.Join(" ", in1223t2));
 
-            String[] in1223t3 = { };
-            Lab08.task1223(in1223t3);
-            Console.WriteLine(String.Join(" ", in1223t3));
+            //String[] in1223t3 = { };
+            //Lab08.task1223(in1223t3);
+            //Console.WriteLine(String.Join(" ", in1223t3));
         }
 
         private static void Step3940()
@@ -126,15 +141,15 @@ namespace task8787
             Console.WriteLine();
             Console.WriteLine("3940");
             String[] in3940l = {
-                "1 2 3 4 1",
-                "1 2 3 4 1 3 4 4 4 4",
-                "1 2 3",
-                "1 2 3"};
+                        "1 2 3 4 1",
+                        "1 2 3 4 1 3 4 4 4 4",
+                        "1 2 3",
+                        "1 2 3"};
             String[] in3940r = {
-                "2 3 4 1 2",
-                "3 4 1 2 3 4 1 2 3 4",
-                "3 4",
-                "3 4 1 2"};
+                        "2 3 4 1 2",
+                        "3 4 1 2 3 4 1 2 3 4",
+                        "3 4",
+                        "3 4 1 2"};
             for (int i = 0; i < in3940l.Length; i++)
             {
                 try

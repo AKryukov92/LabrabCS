@@ -41,12 +41,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="task1379\Interval.cs" />
+    <Compile Include="task1457\Comparator1457.cs" />
+    <Compile Include="task1457\Point.cs" />
+    <Compile Include="task1953\Circle.cs" />
+    <Compile Include="task1953\Interval.cs" />
+    <Compile Include="task2000\Interval.cs" />
+    <Compile Include="task2401\Interval.cs" />
+    <Compile Include="task2662\Interval.cs" />
     <Compile Include="task2809\Point.cs" />
     <Compile Include="task3185\Point.cs" />
+    <Compile Include="task3567\Circle.cs" />
+    <Compile Include="task3956\Circle.cs" />
+    <Compile Include="task3956\Point.cs" />
+    <Compile Include="task3956\Rectangle.cs" />
+    <Compile Include="task3956\Shape.cs" />
+    <Compile Include="task4147\Interval.cs" />
+    <Compile Include="task4147\Point.cs" />
+    <Compile Include="task4147\Rectangle.cs" />
+    <Compile Include="task5032\Rectangle.cs" />
+    <Compile Include="task5108\Rectangle.cs" />
+    <Compile Include="task5242\Interval.cs" />
+    <Compile Include="task5421\Point.cs" />
     <Compile Include="task5449\Point.cs" />
     <Compile Include="task6011\Point.cs" />
+    <Compile Include="task6037\Interval.cs" />
+    <Compile Include="task6876\Circle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="task6876\Comparator6876.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="task6876\Rectangle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="task6876\Shape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="task7186\Comparator7186.cs" />
+    <Compile Include="task7297\Interval.cs" />
     <Compile Include="task7301\Point.cs" />
+    <Compile Include="task7657\Point.cs" />
+    <Compile Include="task8258\Comparator8258.cs" />
     <Compile Include="task8403\Point.cs" />
+    <Compile Include="task9914\Interval.cs" />
+    <Compile Include="task9924\Point.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

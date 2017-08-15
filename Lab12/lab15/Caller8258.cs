@@ -48,5 +48,6 @@ namespace lab15
             integers.Sort(comparator8258);
             Console.WriteLine(String.Join(", ", integers));
         }
+
     }
 }

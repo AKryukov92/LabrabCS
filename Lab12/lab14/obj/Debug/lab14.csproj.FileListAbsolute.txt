@@ -1,0 +1,8 @@
+F:\Репозиторий\LabrabCS\Lab12\lab14\bin\Debug\lab14.exe.config
+F:\Репозиторий\LabrabCS\Lab12\lab14\obj\Debug\lab14.csprojResolveAssemblyReference.cache
+F:\Репозиторий\LabrabCS\Lab12\lab14\bin\Debug\lab14.exe
+F:\Репозиторий\LabrabCS\Lab12\lab14\bin\Debug\lab14.pdb
+F:\Репозиторий\LabrabCS\Lab12\lab14\bin\Debug\Classes.dll
+F:\Репозиторий\LabrabCS\Lab12\lab14\bin\Debug\Classes.pdb
+F:\Репозиторий\LabrabCS\Lab12\lab14\obj\Debug\lab14.exe
+F:\Репозиторий\LabrabCS\Lab12\lab14\obj\Debug\lab14.pdb

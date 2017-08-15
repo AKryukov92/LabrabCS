@@ -245,7 +245,55 @@ namespace Methods
                 return String.Format(t.Replace(in2166, t2));
             }
         }
-
+        public static IList<int> task9279(string in9279)
+        {
+            string t = "abcdacadbacdaabaadc";
+            IList<int>list=new List<int>();
+            if (in9279.Length !=2)
+            {
+                Exception error= new Exception("Вводимая строка должна содержать ровно 2 символа");
+                throw error;
+            }
+            int index1 = t.IndexOf(in9279);//позиция символа в строке
+            if (index1 != -1)
+            {
+                list.Add(index1);
+            }
+            int i = index1 + 1;
+            int index2 = t.IndexOf(in9279, i);//позиция символа в строке после символа в позиции i
+            if (index2 != -1)
+            {
+                list.Add(index2);
+            }
+            return list;
+        }
+        //public static IList<int> task3657(string in3657)
+        //{
+        //    IList<int> list = new List<int>();
+        //    string t = "jijjbjjcidihddbjbcjdjhjdjijjahahdhjcfjcghcjgjgbjdcijibgjbajhdbjhjacgbdijjbdjdjhjigjjgigjahbjjihgiccaaijjajjjijjiiidfgfhgbjjdjajjfhdjajffjhbjghjijabfihbgjjibdjbcgjhjjjbdjibjhjccjjjfjicjjjdjdjjjfjhjhjffjjfbfhhfdhjdjibdjgadcajdjdajhjcijghgijjgchdjadjjdgfbibjjaaijfjcjgjdafcjbhabiggigdccjccjghjadaacffjajicfdijfacjcdfjhhigbjhhhjcbhhfcicbadjgjjddbhhfjfhgjjbbgijijcjgjjccdjifcjjcgfjjhcdhcabggfiabchjjfbbdbjjjgfcdiadcfffjjgbdjjdahhjjaijjdjfddhahjabaacdhahafghjaajchjcdjaihijjdcajhdigiaafhjiijgjfhdjijigjchbhdabacijcajjhfjfgjahffjbahfjjdjgiiahjajjdjfggihajjgjffgjjdhajjjjhcjdjbgjjdjbjjaadhdfhdijaijhaijfhibdadibjcjdfbjigjcjhaijfghbfcjfjagchjhcadjbdbbjhjgdhbjjjfjihchjahgjajgaficjjfjjdjhjjdjajaadgfbdccgjhhajicjdahcjjajjgjjjijbijigbjbaihjgiahjfhjbjjajbjcfcjcajjdjcghicdjdjgbcjijfcacjccjijjffdjigjjhjfcdhbbjhgjfhjgajjgjhdiachhjjjdajjidgbigicjdbjjhdgjihdjcjgijjdgfjgjaaghjjgddjhcfddaajjbjbiahijdajjjbfaachjgidgcjjahfdhcabdfjhjjaifhjjbbgjchjicjjcajhbbcjbgjjjabhdgjcggajhhddbgajjfjajfcccifaibagjcbfjaihdhhbdfijjf";
+        //    if (in3657.Length != 1)
+        //    {
+        //        Exception error=new Exception("Нужно ввести ровно один символ");
+        //        throw error;
+        //    }
+        //    if (!t.Contains(in3657))
+        //    {
+        //        list.Add(0);
+        //    }
+        //    int index = t.IndexOf(in3657);
+        //    int index1 = t.LastIndexOf(in3657);
+        //    int p;//позиция символа после запятой
+        //    int count = 1;
+        //    list.Add(index);
+        //    while (index < index1)
+        //    {
+        //        p = index + 1;
+        //        index = t.IndexOf(in3657, p);
+        //        count++;
+        //        list.Add(index);
+        //    }
+        //    return list;
+        //}
     }
 }
 

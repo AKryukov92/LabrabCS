@@ -857,6 +857,67 @@ namespace Methods
             }
             return sb;
         }
+        public static IList<double> task2321(double A, double B)
+        {
+            IList<double> list = new List<double>();
+            if (A < B)
+            {
+                while (A <= B)
+                {
+                    list.Add(A);
+                    A = A + 1;
+                }
+            }
+            else
+            {
+                while (A >= B)
+                {
+                    list.Add(B);
+                    B = B + 1;
+                }
+            }
+            return list;
+        }
+        public static IList<double> task5053(double A, double B)
+        {
+            IList<double> list = new List<double>();
+            if (A < B)
+            {
+                while (A <= B)
+                {
+                    list.Add(A);
+                    A = A + 1;
+                }
+            }
+            else
+            {
+                while (A >= B)
+                {
+                    list.Add(A);
+                    A = A - 1;
+                }
+            }
+            return list;
+        }
+        public static IList<int> task8418(int in8418i)
+        {
+            IList<int> list = new List<int>();
+            int i=1;
+            if (in8418i <= 0)
+            {
+                Exception error=new Exception("Значение X должно быть положительным");
+                throw error;
+            }
+            while (i <= in8418i)
+            {
+                if (in8418i % i == 0)
+                {
+                    list.Add(i);
+                }
+                i++;
+            }
+            return list;
+        }
     }
 }
 

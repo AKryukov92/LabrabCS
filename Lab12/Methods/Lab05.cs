@@ -440,6 +440,23 @@ namespace Methods
                 return false;
             }
         }
+        public static IList<double> task7991(double x, double y, double z)
+        {
+            IList<double> list = new List<double>();
+            if (-3 < x && x < 5)
+            {
+                list.Add(x);
+            }
+            if (-3 < y && y < 5)
+            {
+                list.Add(y);
+            }
+            if (-3 < z && z < 5)
+            {
+                list.Add(z);
+            }
+            return list;
+        }
     }
 }
     
