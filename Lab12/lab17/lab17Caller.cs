@@ -42,6 +42,7 @@ namespace lab17
                 catch (NpgsqlException ex)
                 {
                     Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
                 }
             }
         }
@@ -82,7 +83,7 @@ namespace lab17
         public static void Step4(DataMapper mapper, View view, NpgsqlConnection connection)
         {
             view.ProductData = mapper.LoadProductData(connection);
-            Dictionary<String, String> productGroups = mapper.LoadGroupData(connection);
+            Dictionary <String, String> productGroups = mapper.LoadGroupData(connection);
 
             Console.WriteLine();
             Console.WriteLine("<h2>Товары по группам</h2>");
@@ -127,6 +128,5 @@ namespace lab17
             Console.WriteLine("<h2>Заказы по сотрудникам</h2>");
             view.PrintEmployeesOrders(employeeList, mapper.LoadOrdersDataByEmployee(connection), mapper.LoadPositionsData(connection));
         }
-
     }
 }

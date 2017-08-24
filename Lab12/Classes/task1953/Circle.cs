@@ -10,6 +10,13 @@ namespace Classes.task1953
         public int cx;
         public int cy;
         public int r;
+        public double Area
+        {
+            get
+            {
+                return Math.PI * r * r;
+            }
+        }
         public Circle(int cx, int cy, int r)
         {
             this.cx = cx;
@@ -19,10 +26,6 @@ namespace Classes.task1953
         public override String ToString()
         {
             return String.Format("<circle cx=\"{0}\" cy=\"{1}\" r=\"{2}\"/>", cx, cy, r);
-        }
-        public double area()
-        {
-            return Math.PI*r*r;
         }
         public Interval getProjectionX()
         {

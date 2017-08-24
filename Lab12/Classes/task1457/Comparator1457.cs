@@ -7,8 +7,8 @@ namespace Classes.task1457
 {
     public class Comparator1457 : Comparer<Point>
     {
-        public Point p;
-        public int i;
+        public Point Target { private set; get; }
+        public int Count { private set; get; }
         public Comparator1457(Point p)
         {
             if (p == null)
@@ -16,7 +16,7 @@ namespace Classes.task1457
                 ArgumentException error = new ArgumentException("Целевая точка не инициализирована");
                 throw error;
             }
-            this.p = p;
+            this.Target = p;
         }
         public override int Compare(Point x, Point y)
         {
@@ -25,24 +25,16 @@ namespace Classes.task1457
                 ArgumentException error = new ArgumentException("Конечная точка не инициализирована");
                 throw error;
             }
-            if (x.distanceTo(p)>y.distanceTo(p))
+            if (x.distanceTo(Target)>y.distanceTo(Target))
             {
-                i++;
+                Count++;
                 return 1;
             }
             else
             {
-                i++;
+                Count++;
                 return -1;
             }
-        }
-        public int getCount()
-        {
-            return i;
-        }
-        public Point getTarget()
-        {
-            return p;
         }
     }
 }

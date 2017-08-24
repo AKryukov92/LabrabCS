@@ -9,6 +9,18 @@ namespace Classes.task2000
     {
         public int a;
         public int b;
+        public int Length
+        {
+            get
+            {
+                if (a > b)
+                {
+                    ArgumentException error = new ArgumentException("Некорректный интервал");
+                    throw error;
+                }
+                return b - a;
+            }
+        }
         public Interval(int a, int b)
         {
             if (a > b)

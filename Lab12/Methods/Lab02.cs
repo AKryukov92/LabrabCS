@@ -143,7 +143,7 @@ namespace Methods
             int c;
             if (a <= 0)
             {
-                Exception error = new Exception("Значение A должно быть положительным");
+                ArgumentException error = new ArgumentException("Значение A должно быть положительным");
                 throw error;
             }
             c = 6 * a * a;

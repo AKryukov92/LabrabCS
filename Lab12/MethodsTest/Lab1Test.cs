@@ -33,7 +33,7 @@ namespace MethodsTest
             Lab01.task1860("знаниям");
             String result = writer.GetStringBuilder().ToString();
             //Проверить результат
-            Assert.AreEqual("Мы стремимся к знаниям", result);
+            Assert.AreEqual("Мы стремимся к знаниям", result.Trim());
         }
 
         [TestMethod]

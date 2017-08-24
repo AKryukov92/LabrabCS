@@ -30,7 +30,7 @@ namespace MethodsTest
         [TestMethod]
         //В том методе правильнее выбрасывать именно ArgumentException, а не просто Exception
         //Тут нужно будет заменить
-        [ExpectedException(typeof(Exception),
+        [ExpectedException(typeof(ArgumentException),
             "Для неположительной боковой поверхности вычислился результат")]
         public void Test9298case3()
         {
@@ -46,8 +46,8 @@ namespace MethodsTest
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception),
-            "Для неположительной боковой поверхности вычислился результат")]
+        //[ExpectedException(typeof(ArgumentException),
+        //    "Для неположительной боковой поверхности вычислился результат")]
         public void Test9298case5()
         {
             //На самом деле исключения быть не должно.
@@ -69,7 +69,7 @@ namespace MethodsTest
         [TestMethod]
         public void Test8428case2()
         {
-            Assert.AreEqual(19.6450, Lab02.task8428(1125), PRECISION);
+            Assert.AreEqual(19.6350, Lab02.task8428(1125), PRECISION);
         }
 
         [TestMethod]

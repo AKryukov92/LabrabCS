@@ -104,10 +104,10 @@ namespace lab14
             try
             {
                 Interval range = new Interval(13, 151);
-                Console.WriteLine("Длина интервала: " + range.length());
+                Console.WriteLine("Длина интервала: " + range.Length);
                 range.squeeze(41);
                 Console.WriteLine("Интервал успешно изменен");
-                Console.WriteLine("Длина интервала: " + range.length());
+                Console.WriteLine("Длина интервала: " + range.Length);
                 Console.WriteLine(range.print());
             }
             catch (ArgumentException ex)

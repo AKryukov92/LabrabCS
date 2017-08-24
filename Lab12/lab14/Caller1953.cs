@@ -18,7 +18,7 @@ namespace lab14
         public static void Step2()
         {
             Circle c = new Circle(40, 50, 13);
-            Console.WriteLine("{0:F4}", c.area());
+            Console.WriteLine("{0:F4}", c.Area);
         }
 
         public static void Step3()

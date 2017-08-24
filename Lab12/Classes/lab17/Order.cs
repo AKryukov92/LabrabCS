@@ -9,23 +9,22 @@ namespace Classes.lab17
     public class Order
     {
         public String Id { private set; get; }
-        public String Date { private set; get; }
-        public String ProductId { private set; get; }
-        public int Quantity { private set; get; }
-        public String ClientId { private set; get; }
-        public String EmployeeId { private set; get; }
-        public bool IsFinished { private set; get; }
+        public DateTime Order_date { private set; get; }
+        public String Productid { private set; get; }
+        public String Quantity { private set; get; }
+        public String Clientid { private set; get; }
+        public String Employeeid { private set; get; }
+        public Boolean Finished { private set; get; }
 
-        public Order(String id, String date, String productId, int quantity,
-            String clientId, String employeeId, bool isFinished)
+        public Order(String id, DateTime order_date, String productid, String quantity, String clientid, String employeeid, Boolean finished)
         {
             Id = id;
-            Date = date;
-            ProductId = productId;
+            Order_date = order_date;
+            Productid = productid;
             Quantity = quantity;
-            ClientId = clientId;
-            EmployeeId = employeeId;
-            IsFinished = isFinished;
+            Clientid = clientid;
+            Employeeid = employeeid;
+            Finished = finished;
         }
     }
 }

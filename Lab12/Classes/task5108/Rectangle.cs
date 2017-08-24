@@ -22,7 +22,7 @@ namespace Classes.task5108
         }
         public override String ToString()
         {
-            return String.Format("{0} x='{1}' y='{2}' w='{3}' h='{4}'>", Id, Xn, Yn, W, H);
+            return String.Format("{{\"x\":{0}, \"y\":{1}, \"w\":{2}, \"h\":{3}}}", Xn, Yn, W, H);
         }
         public void shiftX(int dx)
         {
